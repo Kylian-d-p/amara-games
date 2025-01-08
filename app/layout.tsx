@@ -1,3 +1,4 @@
+import Header from "@/components/layout/header";
 import type { Metadata } from "next";
 import "./globals.css";
 
@@ -13,9 +14,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
-      <body
-        className={`antialiased`}
-      >
+      <body className={`antialiased font-body`}>
+        <Header />
         {children}
       </body>
     </html>
