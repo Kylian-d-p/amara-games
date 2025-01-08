@@ -9,7 +9,7 @@ export default function Header() {
     { href: "/contact", label: "Contact" },
   ];
   return (
-    <header className="sticky top-0 left-0 w-full border-b h-16 px-5 flex items-center justify-between bg-background/70 backdrop-blur">
+    <header className="sticky top-0 left-0 w-full border-b h-16 px-5 flex items-center justify-between bg-background/70 backdrop-blur z-10">
       <Link href="/">
         <span className="font-heading font-extrabold">Amara Games</span>
       </Link>
