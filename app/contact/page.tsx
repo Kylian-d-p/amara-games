@@ -48,7 +48,7 @@ export default function Contact() {
         <CardContent>
           <form className="flex flex-col gap-5">
             {inputs.map((input) => (
-              <div className="flex flex-col gap-2">
+              <div key={input.name} className="flex flex-col gap-2">
                 <Label>{input.label}</Label>
                 {input.inputType === "input" ? (
                   <Input type={input.type || "text"} name={input.name} placeholder={input.label} />
