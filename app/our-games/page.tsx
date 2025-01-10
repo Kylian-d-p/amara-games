@@ -12,7 +12,7 @@ export default function OurGames() {
                 <div className="flex flex-col h-40">
                     <div className="flex items-center">
                         <div className="bg-white h-1 w-52"></div>
-                        <div className=""></div>
+                        <div className="bg-white h-32 w-32"></div>
                     </div>
                 </div>
             </div>
