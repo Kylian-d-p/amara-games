@@ -2,25 +2,6 @@ import RevealOnScroll from "@/components/ui/reveal-on-scroll";
 import Image from "next/image";
 
 export default function About() {
-  const bios = [
-    {
-      name: "Maël Delattre",
-      role: "Visionnaire et storyteller, est la plume et la voix qui donnent vie aux récits captivants d&apos;Amara",
-    },
-    {
-      name: "Kylian Dupouy-Peron",
-      role: "Génie du code, conçoit les moteurs et systèmes qui repoussent les limites de l&apos;interactivité",
-    },
-    {
-      name: "Gaël Voineau",
-      role: "Artiste numérique et architecte des mondes, transforme les pixels en univers spectaculaires",
-    },
-    {
-      name: "Daniel Vincent",
-      role: "Stratège et designer gameplay, assure que chaque moment dans un jeu Amara soit une expérience mémorable",
-    },
-  ];
-
   const sections = [
     {
       imageAttributes: {
@@ -68,7 +49,24 @@ export default function About() {
             </p>
           </RevealOnScroll>
           <ul className="list-disc mt-4 space-y-2">
-            {bios.map((founder, index) => (
+            {[
+              {
+                name: "Maël Delattre",
+                role: "Visionnaire et storyteller, est la plume et la voix qui donnent vie aux récits captivants d'Amara",
+              },
+              {
+                name: "Kylian Dupouy Peron",
+                role: "Génie du code, conçoit les moteurs et systèmes qui repoussent les limites de l'interactivité",
+              },
+              {
+                name: "Gaël Voineau",
+                role: "Artiste numérique et architecte des mondes, transforme les pixels en univers spectaculaires",
+              },
+              {
+                name: "Daniel Vincent",
+                role: "Stratège et designer gameplay, assure que chaque moment dans un jeu Amara soit une expérience mémorable",
+              },
+            ].map((founder, index) => (
               <RevealOnScroll key={index}>
                 <li>
                   {founder.name}, {founder.role}.
@@ -124,16 +122,16 @@ export default function About() {
             {[
               {
                 principle: "Immersion émotionnelle",
-                definition: "Chaque jeu raconte une histoire profondément connectée à l&apos;expérience humaine.",
+                definition: "Chaque jeu raconte une histoire profondément connectée à l'expérience humaine.",
               },
               {
                 principle: "Créativité sans limite",
-                definition: "Les joueurs deviennent eux-mêmes des architectes de l&apos;univers qu&apos;ils explorent.",
+                definition: "Les joueurs deviennent eux-mêmes des architectes de l'univers qu'ils explorent.",
               },
               {
                 principle: "Technologie innovante",
                 definition:
-                  "Grâce à l&apos;expertise technique de Kylian et Gaël, Amara Game utilise des outils avancés pour repousser les limites du réalisable.",
+                  "Grâce à l'expertise technique de Kylian et Gaël, Amara Game utilise des outils avancés pour repousser les limites du réalisable.",
               },
             ].map((philosophy, index) => (
               <RevealOnScroll key={index}>
