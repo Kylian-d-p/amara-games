@@ -3,7 +3,14 @@
 import clsx from "clsx"
 import { useEffect, useRef, useState } from "react"
 
-export default function RevealOnScroll(props: { children: React.ReactNode }) {
+import { HTMLAttributes } from "react"
+
+interface RevealOnScrollProps extends HTMLAttributes<HTMLDivElement> {
+  children: React.ReactNode
+}
+
+export default function RevealOnScroll(props: RevealOnScrollProps) {
+  const { children, ...divProps } = props
   const ref = useRef<HTMLDivElement>(null)
   const [isIntersecting, setIsIntersecting] = useState(false)
 
@@ -11,7 +18,7 @@ export default function RevealOnScroll(props: { children: React.ReactNode }) {
     if (!ref.current) return
 
     const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
+      entries.forEach((entry) => { 
         if (entry.isIntersecting) {
           setIsIntersecting(true)
           observer.disconnect()
@@ -27,8 +34,12 @@ export default function RevealOnScroll(props: { children: React.ReactNode }) {
   }, [ref])
 
   return (
-    <div className={clsx(isIntersecting ? "opacity-1 translate-y-0 blur-0" : "opacity-0 translate-y-10 blur-md", "transition-[opacity,_transform,_filter] duration-700 delay-75")} ref={ref}>
-      {props.children}
+    <div
+      className={clsx(isIntersecting ? "opacity-1 translate-y-0 blur-0" : "opacity-0 translate-y-10 blur-md", "transition-[opacity,_transform,_filter] duration-700 delay-75")}
+      ref={ref}
+      {...divProps}
+    >
+      {children}
     </div>
   )
 }

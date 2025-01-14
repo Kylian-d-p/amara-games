@@ -1,5 +1,6 @@
 import RevealOnScroll from "@/components/ui/reveal-on-scroll";
 import Image from "next/image";
+import Members from "./members";
 
 export default function About() {
   const sections = [
@@ -14,7 +15,7 @@ export default function About() {
         <>
           <RevealOnScroll>
             <h2 className="text-2xl font-bold">
-              <span className="font-heading font-extrabold">Amara Game</span> : La révolution du gaming commence à Bordeaux
+              <span className="font-heading font-extrabold">Amara Games</span> : La révolution du gaming commence à Bordeaux
             </h2>
           </RevealOnScroll>
           <div className="mt-4">
@@ -22,7 +23,7 @@ export default function About() {
               <p>
                 Dans une ville où l&apos;histoire rencontre l&apos;innovation, Bordeaux, quatre esprits brillants partageant une passion commune pour
                 les jeux vidéo ont décidé de transformer leur rêve en réalité. Maël Delattre, Kylian Dupouy-Peron, Gaël Voineau, et Daniel Vincent ont
-                uni leurs forces pour fonder Amara Game, un studio indépendant au potentiel explosif.
+                uni leurs forces pour fonder Amara Games, un studio indépendant au potentiel explosif.
               </p>
             </RevealOnScroll>
           </div>
@@ -43,9 +44,9 @@ export default function About() {
           </RevealOnScroll>
           <RevealOnScroll>
             <p className="mt-4">
-              L&apos;histoire d&apos;Amara Game commence dans une petite pièce d&apos;un appartement bordelais, où des nuits blanches et des litres de
-              café ont donné naissance à une idée audacieuse : créer un label qui ne se contenterait pas de faire des jeux, mais qui raconterait des
-              histoires capables de toucher l&apos;âme des joueurs.
+              L&apos;histoire d&apos;Amara Games commence dans une petite pièce d&apos;un appartement bordelais, où des nuits blanches et des litres
+              de café ont donné naissance à une idée audacieuse : créer un label qui ne se contenterait pas de faire des jeux, mais qui raconterait
+              des histoires capables de toucher l&apos;âme des joueurs.
             </p>
           </RevealOnScroll>
           <ul className="list-disc mt-4 space-y-2">
@@ -91,7 +92,7 @@ export default function About() {
           </RevealOnScroll>
           <RevealOnScroll>
             <p className="mt-4">
-              Amara Game a pris racine dans un studio en plein cœur de Bordeaux, entouré par l&apos;énergie créative de la ville. Cet espace, à la
+              Amara Games a pris racine dans un studio en plein cœur de Bordeaux, entouré par l&apos;énergie créative de la ville. Cet espace, à la
               fois modeste et chaleureux, est devenu une véritable forge où idées, concepts et prototypes prennent vie. Les murs sont tapissés de
               croquis, de scripts et de cartes conceptuelles, chaque recoin respirant l&apos;innovation et la passion.
             </p>
@@ -113,7 +114,7 @@ export default function About() {
           </RevealOnScroll>
           <RevealOnScroll>
             <p className="mt-4">
-              Le cœur d&apos;Amara Game repose sur une philosophie unique : “Le jeu n&apos;est pas une simple distraction, c&apos;est une porte vers
+              Le cœur d&apos;Amara Games repose sur une philosophie unique : “Le jeu n&apos;est pas une simple distraction, c&apos;est une porte vers
               un autre monde”. Nos quatre fondateurs partagent une vision commune : concevoir des jeux qui ne se contentent pas d&apos;amuser, mais
               qui laissent une trace indélébile dans le cœur des joueurs.
             </p>
@@ -131,7 +132,7 @@ export default function About() {
               {
                 principle: "Technologie innovante",
                 definition:
-                  "Grâce à l'expertise technique de Kylian et Gaël, Amara Game utilise des outils avancés pour repousser les limites du réalisable.",
+                  "Grâce à l'expertise technique de Kylian et Gaël, Amara Games utilise des outils avancés pour repousser les limites du réalisable.",
               },
             ].map((philosophy, index) => (
               <RevealOnScroll key={index}>
@@ -158,7 +159,7 @@ export default function About() {
           </RevealOnScroll>
           <RevealOnScroll>
             <p className="mt-4">
-              Aujourd&apos;hui, Amara Game travaille sur un projet secret, surnommé “Project Aurora”, qui promet de bouleverser l&apos;industrie. Les
+              Aujourd&apos;hui, Amara Games travaille sur un projet secret, surnommé “Project Aurora”, qui promet de bouleverser l&apos;industrie. Les
               rumeurs parlent d&apos;un jeu en réalité augmentée prenant place dans les rues de Bordeaux, où les joueurs pourront interagir avec leur
               environnement réel transformé en terrain de jeu virtuel.
             </p>
@@ -176,16 +177,23 @@ export default function About() {
       content: (
         <>
           <RevealOnScroll>
-            <h2 className="text-xl md:text-2xl font-bold">Amara Game : Le futur commence maintenant</h2>
+            <h2 className="text-xl md:text-2xl font-bold">Amara Games : Le futur commence maintenant</h2>
           </RevealOnScroll>
           <RevealOnScroll>
             <p className="mt-4">
               Avec leur studio à Bordeaux et leur ambition sans limites, nos quatre fondateurs ne se contentent pas de créer des jeux, ils bâtissent
               une nouvelle ère du gaming. Leur aventure ne fait que commencer, et les joueurs du monde entier attendent avec impatience ce
-              qu&apos;Amara Game leur réserve.
+              qu&apos;Amara Games leur réserve.
             </p>
           </RevealOnScroll>
         </>
+      ),
+    },
+    {
+      content: (
+        <div className="flex gap-5">
+          <Members />
+        </div>
       ),
     },
   ];
@@ -195,15 +203,17 @@ export default function About() {
       {sections.map((section, index) => (
         <section className="py-16 px-5 odd:bg-secondary group" key={index}>
           <div className="flex flex-col gap-10 lg:flex-row items-center justify-center w-full max-w-7xl mx-auto group-odd:lg:flex-row-reverse">
-            <RevealOnScroll>
-              <Image
-                src={section.imageAttributes.src}
-                width={section.imageAttributes.width}
-                height={section.imageAttributes.height}
-                alt={section.imageAttributes.alt}
-                className="rounded-lg w-full max-w-lg"
-              />
-            </RevealOnScroll>
+            {section.imageAttributes && (
+              <RevealOnScroll>
+                <Image
+                  src={section.imageAttributes.src}
+                  width={section.imageAttributes.width}
+                  height={section.imageAttributes.height}
+                  alt={section.imageAttributes.alt}
+                  className="rounded-lg w-full max-w-lg"
+                />
+              </RevealOnScroll>
+            )}
             <div className="flex flex-col text-left md:px-8 max-w-3xl">{section.content}</div>
           </div>
         </section>
