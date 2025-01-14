@@ -1,4 +1,5 @@
 import RevealOnScroll from "@/components/ui/reveal-on-scroll"
+import Image from "next/image"
 
 
 export default function About() {
@@ -8,6 +9,7 @@ export default function About() {
           <source src="/videos/home-background.mp4" type="video/mp4" />
         </video> */}
       <section className="py-16 flex justify-center bg-secondary">
+        <Image src="/images/bordeaux.jpg" width={1280} height={853} alt="bordeaux" className="rounded-lg md:max-w-md max-h-[220px]" />
         <div className="flex flex-col items-center">
           <h2>
             <span className="font-heading font-extrabold">Amara Game</span> : La révolution du gaming commence à Bordeaux
@@ -51,9 +53,11 @@ export default function About() {
             ))}
           </ul>
         </div>
+        <Image src="/images/study-room.jpg" width={1280} height={902} alt="Gaming controller" className="rounded-lg md:max-w-md" />
       </section>
 
       <section className="py-16 flex justify-center bg-secondary">
+      <Image src="/images/gaming-room.png" width={1280} height={731} alt="Gaming controller" className="rounded-lg md:max-w-md" />
       <div className="flex flex-col items-center">
           <h2>Le studio à Bordeaux : Un atelier de création d'univers</h2>
         <div className="flex text-center max-w-4xl">
@@ -96,9 +100,11 @@ export default function About() {
               </ul>
         </div>
       </div>
+      <Image src="/images/philosophy.jpg" width={1280} height={865} alt="Gaming controller" className="rounded-lg md:max-w-md" />
       </section>
 
       <section className=" py-16 flex justify-center bg-secondary">
+      <Image src="/images/futur-realite-virtuelle.jpg" width={1000} height={618} alt="Gaming controller" className="rounded-lg md:max-w-md max-w-[668px]" />
       <div className="flex flex-col items-center">
           <h2>L’avenir : Le prochain grand projet</h2>
         <div className="flex text-center max-w-4xl ">
@@ -123,6 +129,7 @@ export default function About() {
           </RevealOnScroll>
         </div>
       </div>
+      <Image src="/images/avenir_gaming.jpg" width={1280} height={851} alt="Gaming controller" className="rounded-lg md:max-w-md, max-w-[220px]" />
       </section>
       
     </main>
