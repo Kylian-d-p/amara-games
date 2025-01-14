@@ -6,32 +6,28 @@ export default function OurGames() {
       <h2 className="text-2xl font-bold">Labyrinthe</h2>
       <Image src="/images/maze.gif" width={572} height={480} alt="Kasylian" className="rounded-lg" />
       <p className="text-muted-foreground">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia assumenda error aliquam recusandae ducimus neque labore vel a provident
-        quaerat quibusdam voluptas omnis unde aperiam, officiis, expedita nobis ad pariatur.
+      Plongez dans le jeu du Labyrinthe, un jeu de type puzzle où chaque seconde compte ! Votre mission : trouver la sortie le plus rapidement possible à travers un dédale complexe. Mais ce n’est pas tout ! Personnalisez votre expérience en changeant la couleur de fond pour une ambiance unique, et relevez le défi grâce à trois niveaux de difficulté adaptés à tous les joueurs. Saurez-vous battre le chronomètre et atteindre la sortie avant que le temps ne s'écoule ?
       </p>
     </>,
     <>
       <h2 className="text-2xl font-bold">Course de chevaux</h2>
       <Image src="/images/course-de-chevaux.gif" width={800} height={371} alt="Course de chevaux" className="rounded-lg" />
       <p className="text-muted-foreground">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia assumenda error aliquam recusandae ducimus neque labore vel a provident
-        quaerat quibusdam voluptas omnis unde aperiam, officiis, expedita nobis ad pariatur.
+      Préparez-vous à vivre une expérience de course multijoueur intense avec la course de chevaux ! Jusqu’à 4 joueurs peuvent s’affronter en simultané pour prouver qui est le plus rapide à franchir la ligne d’arrivée. Créez vos propres parties grâce à un système de code personnalisé, invitez vos amis, et que la meilleure stratégie de frappe l'emporte ! Et pour couronner le tout, un classement (leaderboard) met en lumière les meilleurs joueurs.
       </p>
     </>,
     <>
       <h2 className="text-2xl font-bold">Kasylian</h2>
       <Image src="/images/kasylian.gif" width={652} height={480} alt="Kasylian" className="rounded-lg" />
       <p className="text-muted-foreground">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia assumenda error aliquam recusandae ducimus neque labore vel a provident
-        quaerat quibusdam voluptas omnis unde aperiam, officiis, expedita nobis ad pariatur.
+      Plongez dans l’univers palpitant des jeux de hasard avec Kasylian Casino, une simulation immersive qui propose trois expériences uniques. Dans le Jeu des Bombes, choisissez des cases sans tomber sur la bombe pour multiplier vos gains. La Roulette vous permet de parier sur un numéro ou une couleur, tandis que la Slot Machine vous offre une chance de décrocher le jackpot en alignant les bons symboles. Un jeu de chance et de stratégie qui vous promet de vibrer à chaque tour !
       </p>
     </>,
     <>
       <h2 className="text-2xl font-bold">Snake</h2>
       <Image src="/images/snake.gif" width={480} height={502} alt="Snake" className="rounded-lg" />
       <p className="text-muted-foreground">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia assumenda error aliquam recusandae ducimus neque labore vel a provident
-        quaerat quibusdam voluptas omnis unde aperiam, officiis, expedita nobis ad pariatur.
+      Redécouvrez le jeu du Snake dans une version revisitée pour les compétiteurs d’aujourd'hui. Faites grandir votre serpent en ramassant des points, mais attention à ne pas vous mordre la queue ! Chaque partie est l’occasion d'améliorer votre score et de grimper dans le leaderboard. Affrontez vos amis et devenez le maître du serpent dans cette aventure rétro et addictive.
       </p>
     </>,
   ];
