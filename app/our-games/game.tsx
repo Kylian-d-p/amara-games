@@ -32,7 +32,7 @@ export default function Game(props: GameProps) {
 
   return (
     <div
-      className={clsx(`relative max-w-xl group even:self-end transition-all duration-500`, !isIntersecting && "opacity-0 translate-y-10")}
+      className={clsx(`relative max-w-xl group even:self-end transition-all duration-500`, !isIntersecting && "opacity-0 translate-y-10", props.className)}
       ref={ref}
     >
       <div

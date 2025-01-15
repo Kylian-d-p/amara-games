@@ -55,7 +55,7 @@ export default function OurGames() {
           {games.map((game, index) => (
             <Game key={index} className={`${index !== 0 ? "xl:-mt-28" : ""}`}>
               {game}
-              </Game>
+            </Game>
           ))}
         </div>
         <div className="flex justify-center">
