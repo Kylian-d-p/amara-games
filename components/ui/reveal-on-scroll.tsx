@@ -10,7 +10,7 @@ interface RevealOnScrollProps extends HTMLAttributes<HTMLDivElement> {
 }
 
 export default function RevealOnScroll(props: RevealOnScrollProps) {
-  const { children, ...divProps } = props
+  const { children, className, ...divProps } = props
   const ref = useRef<HTMLDivElement>(null)
   const [isIntersecting, setIsIntersecting] = useState(false)
 
@@ -35,7 +35,7 @@ export default function RevealOnScroll(props: RevealOnScrollProps) {
 
   return (
     <div
-      className={clsx(isIntersecting ? "opacity-1 translate-y-0 blur-0" : "opacity-0 translate-y-10 blur-md", "transition-[opacity,_transform,_filter] duration-700 delay-75")}
+      className={clsx(isIntersecting ? "opacity-1 translate-y-0 blur-0" : "opacity-0 translate-y-10 blur-md", "transition-[opacity,_transform,_filter] duration-700 delay-75", className)}
       ref={ref}
       {...divProps}
     >
