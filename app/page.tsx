@@ -1,3 +1,4 @@
+import RevealOnScroll from "@/components/ui/reveal-on-scroll";
 import { TextAnimate } from "@/components/ui/text-animate";
 import Image from "next/image";
 
@@ -15,9 +16,11 @@ export default function Home() {
       </section>
       <section className="bg-secondary py-16 flex justify-center">
         <article className="px-5 lg:px-10 flex flex-col gap-8 max-w-3xl lg:max-w-6xl">
-          <h2 className="text-2xl font-bold">Un projet ambitieux</h2>
+          <RevealOnScroll>
+            <h2 className="text-2xl font-bold">Un projet ambitieux</h2>
+          </RevealOnScroll>
           <div className="flex flex-col lg:flex-row items-center gap-5">
-            <div className="flex flex-col gap-3">
+            <RevealOnScroll className="flex flex-col gap-3">
               <p>
                 Chez <span className="font-heading font-extrabold">Amara Games</span>, nous rêvons grand et jouons encore plus grand.
               </p>
@@ -34,17 +37,23 @@ export default function Home() {
                 Rejoignez-nous dans cette aventure épique où chaque pixel, chaque note et chaque ligne de code sont au service d&apos;une seule
                 ambition : redonner au jeu vidéo sa place de rêveur et de raconteur d&apos;histoires. Ensemble, bâtissons le futur du gaming.
               </p>
-            </div>
-            <Image src="/images/gaming-controller.jpg" width={1280} height={851} alt="Gaming controller" className="rounded-lg md:max-w-md" />
+            </RevealOnScroll>
+            <RevealOnScroll>
+              <Image src="/images/gaming-controller.jpg" width={1280} height={851} alt="Gaming controller" className="rounded-lg md:max-w-md" />
+            </RevealOnScroll>
           </div>
         </article>
       </section>
       <section className="py-16 flex justify-center">
         <article className="px-5 lg:px-10 flex flex-col gap-8 max-w-3xl lg:max-w-6xl">
-          <h2 className="text-2xl font-bold">Des talents visionnaires</h2>
+          <RevealOnScroll>
+            <h2 className="text-2xl font-bold">Des talents visionnaires</h2>
+          </RevealOnScroll>
           <div className="flex flex-col-reverse lg:flex-row items-center gap-5">
-            <Image src="/images/esport.webp" width={1800} height={1200} alt="Gaming controller" className="rounded-lg md:max-w-md" />
-            <div className="flex flex-col gap-3">
+            <RevealOnScroll>
+              <Image src="/images/esport.webp" width={1800} height={1200} alt="Gaming controller" className="rounded-lg md:max-w-md" />
+            </RevealOnScroll>
+            <RevealOnScroll className="flex flex-col gap-3">
               <p>
                 Chez <span className="font-heading font-extrabold">Amara Games</span>, nous croyons que derrière chaque grand jeu se cache une équipe
                 de talents exceptionnels.
@@ -60,7 +69,7 @@ export default function Home() {
                 Ici, chaque voix compte, chaque innovation est célébrée, et chaque projet est l’occasion d’écrire une nouvelle page de l’histoire du
                 jeu vidéo. Vous avez une vision ? Nous sommes là pour la propulser.
               </p>
-            </div>
+            </RevealOnScroll>
           </div>
         </article>
       </section>

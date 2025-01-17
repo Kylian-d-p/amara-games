@@ -43,12 +43,12 @@ export default function OurGames() {
       </p>
     </>,
     <>
-      <h2 className="text-2xl font-bold self-start">Tower defense</h2>
+      <h2 className="text-2xl font-bold self-start flex items-center gap-2">Tower defense<span className="font-heading bg-yellow-500 rounded-lg py-1 px-2 text-sm">new</span></h2>
       <Image src="/images/Tower_defense.gif" width={480} height={502} alt="Snake" className="rounded-lg" />
       <p className="text-muted-foreground">
-        Affronter l&apos;empire dans un duel spacial endiablé ! Dans notre jeu de gestion de bataille spacial, vous incarnerez les défenses de votre
-        bases. Celle-ci se font canarder severe par des vaisseaux spaciaux hyper relou. Y&apos;en a ils vont vite mais ils ont pas de vie,
-        d&apos;autre c&apos;est des gros balours avec plein de vie et d&apos;autre ils regalent les autre en vie.
+        Affrontez l&apos;empire dans un duel spacial endiablé ! Dans notre jeu de gestion de bataille spaciale, vous incarnerez les défenses de votre
+        base. Celle-ci se font canarder sévère par des vaisseaux spaciaux hyper relous. Y&apos;en a ils vont vite mais ils ont pas de vie,
+        d&apos;autre c&apos;est des gros balours avec plein de vie et d&apos;autre ils regalent les autres en vie.
       </p>
     </>,
   ];
