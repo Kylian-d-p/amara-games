@@ -42,6 +42,15 @@ export default function OurGames() {
         grimper dans le leaderboard. Affrontez vos amis et devenez le maître du serpent dans cette aventure rétro et addictive.
       </p>
     </>,
+    <>
+      <h2 className="text-2xl font-bold self-start">Tower defense</h2>
+      <Image src="/images/Tower_defense.gif" width={480} height={502} alt="Snake" className="rounded-lg" />
+      <p className="text-muted-foreground">
+        Affronter l'empire dans un duel spacial endiablé ! Dans notre jeu de gestion de bataille spacial, vous incarnerez les défenses de votre bases. 
+        Celle-ci se font canarder severe par des vaisseaux spaciaux hyper relou. Y'en a ils vont vite mais ils ont pas de vie, d'autre c'est des gros balours
+        avec plein de vie et d'autre ils regalent les autre en vie. 
+      </p>
+    </>,
   ];
 
   return (
