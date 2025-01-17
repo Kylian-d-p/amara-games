@@ -46,9 +46,9 @@ export default function OurGames() {
       <h2 className="text-2xl font-bold self-start">Tower defense</h2>
       <Image src="/images/Tower_defense.gif" width={480} height={502} alt="Snake" className="rounded-lg" />
       <p className="text-muted-foreground">
-        Affronter l'empire dans un duel spacial endiablé ! Dans notre jeu de gestion de bataille spacial, vous incarnerez les défenses de votre bases. 
-        Celle-ci se font canarder severe par des vaisseaux spaciaux hyper relou. Y'en a ils vont vite mais ils ont pas de vie, d'autre c'est des gros balours
-        avec plein de vie et d'autre ils regalent les autre en vie. 
+        Affronter l&apos;empire dans un duel spacial endiablé ! Dans notre jeu de gestion de bataille spacial, vous incarnerez les défenses de votre
+        bases. Celle-ci se font canarder severe par des vaisseaux spaciaux hyper relou. Y&apos;en a ils vont vite mais ils ont pas de vie,
+        d&apos;autre c&apos;est des gros balours avec plein de vie et d&apos;autre ils regalent les autre en vie.
       </p>
     </>,
   ];
